@@ -98,7 +98,7 @@ const Landing = ({ onDaftar, onMasuk }) => (
     left={<div>
       <h1 style={{ fontSize:32, fontWeight:700, fontFamily:F.display, color:T.cream, lineHeight:1.25, margin:"0 0 14px" }}>Analisis Keuangan Bisnis Anda<br/><span style={{ color:T.gold }}>Otomatis & Akurat</span></h1>
       <p style={{ fontSize:14, color:T.muted, fontFamily:F.body, lineHeight:1.7, margin:"0 0 24px" }}>Upload laporan keuangan. AI kami analisis semua rasio, deteksi risiko, dan kasih rekomendasi strategis untuk bisnis Anda.</p>
-      {["📊 30+ rasio keuangan otomatis","💵 Analisis cash flow & arus kas","⚠️ Early warning sebelum masalah terjadi","💬 Tanya AI tentang keuangan bisnis Anda","📄 Laporan PDF siap ke bank/investor"].map(f=>(
+      {["📊 30+ rasio keuangan otomatis","💵 Analisis cash flow & arus kas","⚠️ Early warning sebelum masalah terjadi","💬 Tanya AI tentang keuangan bisnis Anda","📄 Laporan PDF"].map(f=>(
         <div key={f} style={{ fontSize:13, color:T.cream2, fontFamily:F.body, marginBottom:8 }}>{f}</div>
       ))}
     </div>}
@@ -320,8 +320,8 @@ const PricingPage = ({ onBack, onPilih }) => (
       <div style={{ display:"flex", gap:20, flexWrap:"wrap", justifyContent:"center" }}>
         {[
           { id:"trial", name:"Trial", price:"Gratis", period:"5 hari", color:T.muted, features:["3 perusahaan","Analisis dasar","Export terbatas"] },
-          { id:"plan-a", name:"Plan A", price:"Rp 299rb", period:"/bulan", color:T.gold, features:["10 perusahaan","Semua rasio keuangan","Export PDF penuh","AI Chat"] },
-          { id:"plan-b", name:"Plan B", price:"Rp 599rb", period:"/bulan", color:T.green, features:["Unlimited perusahaan","Semua fitur Plan A","Benchmark industri","Priority support"] },
+          { id:"plan-a", name:"Plan A", price:"Rp 329rb", period:"/bulan", color:T.gold, features:["10 perusahaan","Semua rasio keuangan","Export PDF penuh","AI Chat"] },
+          { id:"plan-b", name:"Plan B", price:"Rp 612rb", period:"/bulan", color:T.green, features:["Unlimited perusahaan","Semua fitur Plan A","Benchmark industri","Priority support"] },
         ].map(p=>(
           <div key={p.id} style={{ flex:"1 1 250px", maxWidth:280, background:T.navy2, border:`2px solid ${p.color}44`, borderRadius:16, padding:24 }}>
             <div style={{ fontSize:11, color:p.color, fontFamily:F.body, fontWeight:700, textTransform:"uppercase", marginBottom:8 }}>{p.name}</div>
