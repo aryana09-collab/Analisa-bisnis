@@ -24,7 +24,7 @@ const BENCHMARK = {
 const Logo = ({ size=24 }) => (
   <div style={{ display:"flex", alignItems:"center", gap:8 }}>
     <div style={{ width:size+8, height:size+8, borderRadius:8, background:`linear-gradient(135deg,${T.gold},${T.gold2})`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:size*0.65 }}>⚖</div>
-    <span style={{ fontSize:size, fontWeight:700, fontFamily:F.display, color:T.cream }}>FinLens</span>
+    <span style={{ fontSize:size, fontWeight:700, fontFamily:F.display, color:T.cream }}>NeyCo</span>
   </div>
 );
 
@@ -215,7 +215,7 @@ const StepPassword = ({ nama, onDone }) => {
       right={<div>
         <StepBar steps={["Email","Verifikasi OTP","Buat Password"]} current={2}/>
         <h2 style={{ fontSize:20, fontWeight:700, fontFamily:F.display, color:T.cream, margin:"0 0 4px" }}>Buat Password</h2>
-        <p style={{ fontSize:13, color:T.muted, fontFamily:F.body, margin:"0 0 20px" }}>Digunakan untuk masuk ke akun FinLens Anda</p>
+        <p style={{ fontSize:13, color:T.muted, fontFamily:F.body, margin:"0 0 20px" }}>Digunakan untuk masuk ke akun NeyCo Anda</p>
         <div style={{ marginBottom:14 }}>
           <label style={{ fontSize:11, color:T.muted, fontFamily:F.body, textTransform:"uppercase", letterSpacing:0.8, display:"block", marginBottom:5 }}>Password Baru</label>
           <div style={{ position:"relative" }}>
@@ -362,7 +362,7 @@ const Sidebar = ({ active, setActive, userName, plan }) => {
 };
 
 const exportPDF = (company) => {
-  const content = `LAPORAN KEUANGAN - ${company.name}\n${"=".repeat(40)}\nSkor Kesehatan: ${company.score}/100\nStatus: ${company.status}\n\nRasio Keuangan:\n- Current Ratio: ${company.current}\n- DER: ${company.der}\n- Net Profit Margin: ${company.npm}%\n- ROE: ${company.roe}%\n\nDibuat oleh FinLens`;
+  const content = `LAPORAN KEUANGAN - ${company.name}\n${"=".repeat(40)}\nSkor Kesehatan: ${company.score}/100\nStatus: ${company.status}\n\nRasio Keuangan:\n- Current Ratio: ${company.current}\n- DER: ${company.der}\n- Net Profit Margin: ${company.npm}%\n- ROE: ${company.roe}%\n\nDibuat oleh NeyCo`;
   const blob = new Blob([content], { type:"text/plain" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
