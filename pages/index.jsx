@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>FinLens — Analisis Keuangan Bisnis</title>
+        <title>NeyCo — Analisis Keuangan Bisnis</title>
         <meta name="description" content="Platform analisis keuangan AI untuk pebisnis Indonesia" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
